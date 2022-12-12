@@ -7,4 +7,4 @@ Sometimes, when the webpage is opened, the data section doesn't get displayed or
 
 Requirements -\
 ChromeDriver (https://chromedriver.chromium.org/downloads)\
-Selenium\
+Selenium
