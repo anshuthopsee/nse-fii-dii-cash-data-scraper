@@ -57,6 +57,7 @@ def get_data():
 
     #Checks if today's date and the date of available data are the same
     if date_today == date_displayed:
+        
         #Removes data lables
         for i in [0, 0, 3, 3]:
             values_list.pop(i)
