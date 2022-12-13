@@ -54,7 +54,8 @@ def get_data():
 
     date_displayed = values_list[1]
     date_today = date.today().strftime("%d-%b-%Y")
-
+    driver.quit()
+    
     #Checks if today's date and the date of available data are the same
     if date_today == date_displayed:
         
@@ -65,11 +66,9 @@ def get_data():
         for i in range(0, len(values_list)):
             data[data_keys[i]] = float(values_list[i])
         
-        driver.quit()
         return data
 
     else:
-        driver.quit()
         print(f"Data for {date_today} is not yet available. Try again later.")
 
 data = get_data()
