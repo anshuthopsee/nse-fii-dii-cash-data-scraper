@@ -69,7 +69,7 @@ def get_data():
         return data
 
     else:
+        driver.quit()
         print(f"Data for {date_today} is not yet available. Try again later.")
-        return None
 
 data = get_data()
